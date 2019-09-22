@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(lengthOfLongestSubstring("abba"))
+	fmt.Println(findMedianSortedArrays([]int{1}, []int{}))
 }
