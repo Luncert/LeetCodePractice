@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(findMedianSortedArrays([]int{1}, []int{}))
+	fmt.Println(convert("LEETCODE", 2))
 }
