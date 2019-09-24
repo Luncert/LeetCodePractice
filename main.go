@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	nums := []int{0, 4, 3, 0}
-	fmt.Println(twoSum2(nums, 0))
+	fmt.Println(math.MaxInt32)
+	fmt.Println(myAtoi("18446744073709551617"))
 }
