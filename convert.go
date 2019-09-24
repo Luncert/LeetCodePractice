@@ -26,3 +26,18 @@ func convert(s string, rowNum int) string {
 	}
 	return ret.String()
 }
+
+func convert1(s string, rowNum int) string {
+	sz := len(s)
+	buf := make([]byte, sz)
+	ref := rowNum - 1
+	c := 0
+	for i := 0; i < sz; i++ {
+		buf[i] = s[c]
+		c = 2*ref - c
+		if c > sz {
+
+		}
+	}
+	return ""
+}
