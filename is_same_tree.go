@@ -6,7 +6,15 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-const minInt = ^int(uint(0) >> 1)
+func isSameTree(p *TreeNode, q *TreeNode) bool {
+	if p == nil && q == nil {
+		return true
+	} else if p == nil || q == nil || p.Val != q.Val {
+		return false
+	} else {
+		return isSameTree(p.Left, q.Left) && isSameTree(p.Right, q.Right)
+	}
+}
 
 func isSameTree1(p *TreeNode, q *TreeNode) bool {
 	sp := make([]*TreeNode, 0)
