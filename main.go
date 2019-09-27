@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println(isPalindrome1(10))
+	fmt.Println(isPalindrome1(21120))
 }
