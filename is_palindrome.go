@@ -38,9 +38,13 @@ func isPalindrome1(x int) bool {
 		return true
 	}
 	var part, b int
+	b = x % 10
+	// e.g. abc0, i return false because a won't be a
+	if b == 0 {
+		return false
+	}
+	x /= 10
 	for x != 0 {
-		b = x % 10
-		x /= 10
 		if x == part {
 			return true
 		}
@@ -48,6 +52,9 @@ func isPalindrome1(x int) bool {
 		if x == part {
 			return true
 		}
+
+		b = x % 10
+		x /= 10
 	}
 	return false
 }
